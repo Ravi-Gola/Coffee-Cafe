@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoffeeCafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CoffeeCafe</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="alert alert-dark" id="alert"role="alert">
+          Successfully Order ! thank you.
+      </div>
+    <h1 class="d-flex justify-content-center text-success">Order Your Coffee</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <input type="text" id="name" class="form-control" placeholder="Full name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" id="mob" class="form-control" placeholder="Mobile number" aria-label="Mobile Number">
+        </div>
+      </div>
+        <div class="card text-center m-2">
+            <div class="card-header bg-success text-light">
+              Menu
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-secondary text-white w-100">Product/Add-on</li>
+                    <li class="list-group-item bg-dark text-white  w-100" >Milk</li>
+                    <li class="list-group-item bg-dark text-white w-100">Cream</li>
+                    <li class="list-group-item bg-dark text-white w-100">Latte</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark text-white w-100">Espresso</li>
+                    <li class="list-group-item   w-100"  value=60><b>60 Rs</b> <button class="btn bg-success Up" value="Espresso with addon Milk">+</button><button class="btn bg-success mx-2 down" value="Espresso with addon Milk">-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=75><b>75 Rs</b> <button class="btn bg-success Up" value="Espresso with addon Cream" >+</button><button class="btn bg-success mx-2 down" value="Espresso with addon Cream" >-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=100><b>100 Rs</b> <button class="btn bg-success Up" value="Espresso with addon Latte">+</button><button class="btn bg-success mx-2 down" value="Espresso with addon Latte">-</button> <span class="num">0</span></li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark text-white w-100">Cappuccino</li>
+                    <li class="list-group-item   w-100" value=80><b>80 Rs</b> <button class="btn bg-success Up" value="Cappuccino with addon Milk">+</button><button class="btn bg-success mx-2 down" value="Cappuccino with addon Milk">-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=95><b>95 Rs</b> <button class="btn bg-success Up" value="Cappuccino with addon Cream">+</button><button class="btn bg-success mx-2 down" value="Cappuccino with addon Cream">-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=120><b>120 Rs</b> <button class="btn bg-success Up" value="Cappuccino with addon Latte">+</button><button class="btn bg-success mx-2 down" value="Cappuccino with addon Latte">-</button> <span class="num">0</span></li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark text-white w-100">Latte</li>
+                    <li class="list-group-item   w-100" value=100><b>100 Rs</b> <button class="btn bg-success Up" value="Latte with addon Milk">+</button><button class="btn bg-success mx-2 down" value="Latte with addon Milk" >-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=125><b>125 Rs</b> <button class="btn bg-success Up" value="Latte with addon Cream">+</button><button class="btn bg-success mx-2 down" value="Latte with addon Cream">-</button> <span class="num">0</span></li>
+                    <li class="list-group-item   w-100" value=150><b>150 Rs</b> <button class="btn bg-success Up" value="Latte with addon Latte">+</button><button class="btn bg-success mx-2 down" value="Latte with addon Latte">-</button> <span class="num">0</span></li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header bg-success text-light">
+              Order detail
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-horizontal" id="profile">
+               
+            </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item border-bottom border-0 border-dark w-100">Product</li>
+                    <li class="list-group-item border-bottom border-0 border-dark w-25" >price</li>
+                </ul>
+                <div id="item">
+
+                </div>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item border-0 w-100 bg-secondary text-white"><b>Total Amount to be Pay</b></li>
+                    <li class="list-group-item border-0 w-25 bg-secondary text-white" id="total" ><b>125 Rs</b></li>
+
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <a href="#" class="btn btn-success m-2  " onclick="order()">Order</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
